@@ -1,16 +1,119 @@
 <html>
     <head>
         <title>Pagina Inicial</title>
+        <style>
+            p {
+                color: #433e3f;
+                font-size: 1.2rem;
+                line-height: 0%;
+            }
+
+            li {
+                color: #003566;
+                font-size: 1.2rem;
+            }
+
+            h1 {
+                color: darkmagenta;
+                font-size: 2rem;
+            }
+
+            h3 {
+                color: black;
+                font-size: 1.2rem;
+            }
+
+            body {
+                background-color: #f7ebec;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+            .logo {
+                height: 300;
+                width: 250;
+            }
+
+            .jogo {
+                height: 430;
+                width: 200;
+            }
+
+            .crud {
+                height: 550;
+                width: 590;
+            }
+
+            .elon {
+                height: 300;
+            }
+
+            .tesla {
+                height: 300;
+                width: 200;
+            }
+
+
+        </style>
     </head>
 
     <body>
-        <img src="logo.png" 
-        alt="Logo"
-        width="220"
-        height="300"
-        />
-        <h1>Hello web Front-end!</h1>
-        <p>Emerson Nogueira dos Santos</p>
+        <div class="logo">
+            <img src="logo.png" alt="Logo"/>
+        </div>
+        <h1>Sobre</h1>
+        <p>Olá, me chamo <strong>Emerson Nogueira</strong>, tenho 21 anos, estou me graduando em <strong>Geoprocessamento</strong> pelo IFPI</p>
+        <p>Iniciei na programacao com 12 anos por hobby e se tornou algo além de um simples hobby</p>
+        <p>Faco parte do <strong><a href="http://lims.ifpi.edu.br/">LIMS</a></strong>, laboratorio local do nosso campus.</p>
+
+        <hr size="2" width="50%" noshade>
+
+        <h1>Técnologias</h1>
+        <p><li>Python</li> 
+           <li>JavaScript</li> 
+           <li>C# <i>(iniciando)</i></li>
+        </p>
+
+        <hr size="2" width="50%" noshade>
+
+        <h1>Projetos</h1>
+        <h3>Jogo Mobile</h3>
+        <p><i>Jogo estilo Candy Crush, desenvolvido na Unity2D com C#</i></p>
+        <div class="jogo">
+            <img src="jogo.png" alt="Candy Destroyer">
+        </div>
+        <br>
+
+        <h3>Sistema de Cadastro CRUD</h3>
+        <p><i>Programa para controle de membros no laboratorio LIMS, desenvolvido com a biblioteca 'tkinter' do Python</i></p>
+        <div class="crud">
+            <img src="crud.png" alt="CRUD">
+        </div>
+        <hr size="2" width="50%" noshade>
+
+        <h1>Inspiracões</h1>
+
+        <div class="elon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Elon_Musk_Royal_Society.jpg" alt="Elon Musk">
+            <p><a href="https://pt.wikipedia.org/wiki/Elon_Musk">Elon Musk</a></p>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="tesla">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Tesla_circa_1890.jpeg" alt="Tesla">
+            <p><a href="https://pt.wikipedia.org/wiki/Nikola_Tesla">Nikola Tesla</a></p>
+        </div>
+
+        <hr size="2" width="50%" noshade>
+
     </body>
 
 </html>
