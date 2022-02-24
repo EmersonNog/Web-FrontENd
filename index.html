@@ -1,10 +1,15 @@
 <html>
     <head>
         <title>Pagina Inicial</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <style>
             p {
                 color: #433e3f;
                 font-size: 1.2rem;
+                
             }
 
             li {
@@ -57,8 +62,21 @@
                 width: 200;
             }
 
+            #name_id {
+                font-size: 1.2rem;
+                color: rgb(57, 60, 61);
+                margin-bottom: 1rem;
+            }
+
+            #btn_check {
+                font-size: 1rem;
+                width: 8rem;
+                height: 1.6rem;
+                border-radius: 10px;
+            }
 
         </style>
+
     </head>
 
     <body>
@@ -73,9 +91,12 @@
         <hr size="2" width="50%" noshade>
 
         <h1>Técnologias</h1>
-        <p><li>Python</li> 
-           <li>JavaScript</li> 
-           <li>C# <i>(iniciando)</i></li>
+        <p>
+            <ul>
+            <li>Python</li> 
+            <li>JavaScript</li> 
+            <li>C# <i>(iniciando)</i></li>
+            </ul>
         </p>
 
         <hr size="2" width="50%" noshade>
@@ -111,6 +132,32 @@
             <p><a href="https://pt.wikipedia.org/wiki/Nikola_Tesla">Nikola Tesla</a></p>
         </div>
 
+        <br>
+        <hr size="2" width="50%" noshade>
+
+        <h2>Nome do Visitante: </h2>
+        <input 
+        type="text" 
+        placeholder="Insira seu nome" 
+        id="name_id">
+
+        <button id="btn_check">Check-in</button>
+
+        <script>
+            alert('Home de Apresentacão do Aluno Emerson Nogueira!')
+
+            const componente_btn_check = document.getElementById('btn_check')
+            const componente_name_id = document.getElementById('name_id')
+
+            componente_btn_check.onclick = () => {
+                const nome = componente_name_id.value;
+                const msg = 'Prazer em conhecê-lo(a) ' + nome + '!';
+                alert(msg)
+            }
+
+        </script>        
+
     </body>
+
 
 </html>
